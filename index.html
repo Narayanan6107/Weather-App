@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather in India</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <input type="text" id="cityInput" placeholder="Enter state or city in India" />
+    <button onclick="getWeather(document.getElementById('cityInput').value)">Search</button>
+
+    <div class="card">
+      <div class="sky"></div>
+      <div class="sun"></div>
+
+      <div class="weather-data">
+        <h2 id="location">Delhi</h2>
+        <p id="day">Monday</p>
+        <h1 id="temp">--°C</h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
